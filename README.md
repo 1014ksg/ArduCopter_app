@@ -27,11 +27,11 @@ test2 https://drive.google.com/file/d/13lo30dfXUXxoS2tb99sdFGbT_4WVDsvX/view?usp
 コース 3 で作成したフライトモードのテストを行えるようにした。DroneKit, Pymavlink を使用し、想定シーンの再現を行った。    
 
 ## Usage
-SITL, MP を立ち上げた状態で、EMGL.py を実行し、想定シーン（接続 → Arm → 離陸 → WP の設定 → Auto → バッテリ降下 → (改造) RTL）を再現することは可能。  
+SITL, MP を立ち上げた状態で、test4EMG_RTL.py を実行し、想定シーン（接続 → Arm → 離陸 → WP の設定 → Auto → バッテリ降下 → (改造) RTL）を再現することが可能。  
 想定シーンの最後の RTL は、https://github.com/1014ksg/ardupilot.git リポジトリの master ブランチ を使用すると RTL モードとなり、コース 3 の課題としてチーム一戸で作成した https://github.com/1014ksg/ardupilot.git リポジトリの feat/EMGL ブランチ を使用すると 改造 RTL モードとなる。  
 
 ## Dependencies
-改造 RTL には、以下のパッケージが必要になる。
+改造 RTL には、以下のパッケージが必要になる。  
 ``` sudo apt install librapidxml-dev -y ```
 
 
