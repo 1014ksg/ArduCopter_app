@@ -1,10 +1,14 @@
 # ArduCopter_app
 
 ## チーム説明
-コース 3 で組織されたチーム一戸として、コース 2, 3 の課題を行った。コース 2 の課題としては、work/test4EMG_RTL.py を作成した。コース 3 の課題としては、ardupilot/ArduCopter/mode_rtl.cpp, ardupilot/Tools/ardupilotwaf/boards.py を編集、locate.xml を追加した。
+コース 3 で組織されたチーム一戸として、コース 2, 3 の課題を行った。
+コース 2 の課題としては、work/test4EMG_RTL.py を作成した。
+コース 3 の課題としては、ardupilot/ArduCopter/mode_rtl.cpp, ardupilot/Tools/ardupilotwaf/boards.py を編集、locate.xml を追加した。
 
 ## 概要説明
 動作している様子を以下の YouTube リンクで示す。
+test1 https://drive.google.com/file/d/17dWtHmriebNcA_99P5_JRD5-ukOf8Itx/view?usp=sharing
+test2 https://drive.google.com/file/d/13lo30dfXUXxoS2tb99sdFGbT_4WVDsvX/view?usp=share_link
 
 - 想定シーン
     - コプターが指定された複数の Waypoint を　Auto mode で巡行中に、バッテリ電圧が低下し RTL mode でホームに向かうシーン
@@ -25,6 +29,7 @@ SITL, MP を立ち上げた状態で、EMGL.py を実行し、想定シーン（
 想定シーンの最後の RTL は、オリジナルな ardupilot/ を使用すると RTL モードとなり、コース 3 の課題としてチーム一戸で作成した ardupilot/ を使用すると 改造 RTL となる。
 
 改造 RTL には、以下のパッケージが必要になる。
-``` 
+``` sudo apt install librapidxml-dev -y
+
 
 
