@@ -4,7 +4,7 @@
 コース 3 で組織されたチーム一戸として、コース 2, 3 の課題を行った。  
 
 ## 概要説明
-動作している様子を以下の動画で示す。（画質は 1080p 閲覧してください。）  
+動作している様子を以下の動画で示す。（画質は 1080p で閲覧してください。）  
 test1 https://drive.google.com/file/d/17dWtHmriebNcA_99P5_JRD5-ukOf8Itx/view?usp=sharing  
 test2 https://drive.google.com/file/d/13lo30dfXUXxoS2tb99sdFGbT_4WVDsvX/view?usp=share_link  
 
@@ -32,7 +32,7 @@ SITL, MP を立ち上げた状態で、EMGL.py を実行し、想定シーン（
 
 ## Dependencies
 改造 RTL には、以下のパッケージが必要になる。
-``` sudo apt install librapidxml-dev -y
+``` sudo apt install librapidxml-dev -y ```
 
 
 
