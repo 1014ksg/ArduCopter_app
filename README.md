@@ -19,18 +19,18 @@ test2 https://drive.google.com/file/d/13lo30dfXUXxoS2tb99sdFGbT_4WVDsvX/view?usp
     - これにより、急激な電圧降下によって継続した飛行が困難な場合であっても、安全に着陸させる。
 
 ## 実際に行ったこと
-コース 3 の課題としては、ardupilot/ArduCopter/mode_rtl.cpp, ardupilot/Tools/ardupilotwaf/boards.py を編集、locate.xml を追加した。  
-コードは、 https://github.com/1014ksg/ardupilot.git リポジトリの feat/EMGL ブランチにある。  
+コース 3 の課題として実装したコードは、https://github.com/1014ksg/ardupilot.git リポジトリの feat/EMGL ブランチにある。  
+具体的には、ardupilot/ArduCopter/mode_rtl.cpp, ardupilot/Tools/ardupilotwaf/boards.py を編集、locate.xml を追加した。  
 オリジナルな RTL を改造し、新しいフライトモード（改造 RTL）を作成した。 
 
-コース 2 の課題としては、work/test4EMG_RTL.py を作成した。  
-コードは、 https://github.com/1014ksg/ArduCopter_app.git リポジトリにある。 
+コース 2 の課題として実装したコードは、https://github.com/1014ksg/ArduCopter_app.git リポジトリの master ブランチ、work/test4EMG_RTL.py にある。  
 コース 3 で作成したフライトモードのテストを行えるようにした。DroneKit, Pymavlink を使用し、想定シーンの再現を行った。    
 
-## Dependencies
+## Usage
 SITL, MP を立ち上げた状態で、EMGL.py を実行し、想定シーン（接続 → Arm → 離陸 → WP の設定 → Auto → バッテリ降下 → (改造) RTL）を再現することは可能。  
-想定シーンの最後の RTL は、オリジナルな ardupilot/ を使用すると RTL モードとなり、コース 3 の課題としてチーム一戸で作成した ardupilot/ を使用すると 改造 RTL となる。  
+想定シーンの最後の RTL は、https://github.com/1014ksg/ardupilot.git リポジトリの master ブランチ を使用すると RTL モードとなり、コース 3 の課題としてチーム一戸で作成した https://github.com/1014ksg/ardupilot.git リポジトリの feat/EMGL ブランチ を使用すると 改造 RTL モードとなる。  
 
+## Dependencies
 改造 RTL には、以下のパッケージが必要になる。
 ``` sudo apt install librapidxml-dev -y
 
