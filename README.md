@@ -31,6 +31,5 @@ SITL, MP を立ち上げた状態で、test4EMG_RTL.py を実行し、想定シ�
 改造 RTL には、以下のパッケージが必要になる。  
 ``` git clone  https://github.com/1014ksg/ardupilot.git ```（ feat/EMGL ブランチ）  
 ``` sudo apt install librapidxml-dev -y ```
-
-
+また、MP 上で MAndatory Hardware >> FAilSafe >> Battery をlow Battery 10.5, RTL に設定する必要がある。
 
